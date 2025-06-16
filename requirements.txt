@@ -1,0 +1,6 @@
+# Minimal requirements for basic MCP Sentiment Analyzer
+gradio>=4.0.0
+textblob>=0.17.1
+asyncio>=3.4.3
+pydantic>=2.0.0
+typing-extensions>=4.8.0
