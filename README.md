@@ -127,18 +127,6 @@ python app.py --config custom_config.yaml --port 8080
 ```
 
 </details>
-<details>
-<summary><b>🎬 Step 3: Launch</b></summary>
-
-```bash
-# Start the MCP server
-python app.py
-
-# Or with custom configuration
-python app.py --config custom_config.yaml --port 8080
-```
-
-</details>
 ---
 
 ## 💻 **Usage Examples**
