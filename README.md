@@ -127,7 +127,18 @@ python app.py --config custom_config.yaml --port 8080
 ```
 
 </details>
+<details>
+<summary><b>🎬 Step 3: Launch</b></summary>
 
+```bash
+# Start the MCP server
+python app.py
+
+# Or with custom configuration
+python app.py --config custom_config.yaml --port 8080
+```
+
+</details>
 ---
 
 ## 💻 **Usage Examples**
@@ -221,63 +232,6 @@ gantt
     Confidence Check     :20, 30
     Validation          :40, 48
 ```
-
----
-
-## 🏗️ **Architecture**
-
-<div align="center">
-
-```mermaid
-graph TB
-    subgraph "🌐 Client Layer"
-        A[Web UI] 
-        B[REST API]
-        C[MCP Client]
-    end
-    
-    subgraph "⚙️ Service Layer"
-        D[Request Handler]
-        E[Authentication]
-        F[Rate Limiter]
-    end
-    
-    subgraph "🧠 Processing Engine"
-        G[Text Preprocessor]
-        H[Sentiment Model]
-        I[Emotion Classifier]
-        J[Confidence Calculator]
-    end
-    
-    subgraph "💾 Data Layer"
-        K[Model Cache]
-        L[Results Store]
-        M[Metrics DB]
-    end
-    
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> L
-    L --> M
-    
-    style A fill:#e3f2fd
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#fce4ec
-    style F fill:#f1f8e9
-```
-
-</div>
-
 ---
 
 ## 🔧 **Configuration**
